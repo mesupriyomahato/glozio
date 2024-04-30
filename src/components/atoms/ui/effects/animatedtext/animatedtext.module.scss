@@ -1,0 +1,47 @@
+@use "../../../../../styles/essentials";
+@use "../../../../../styles/typography";
+@import "../../../../../styles/essentials";
+@import "../../../../../styles/typography";
+
+.wrapContainer {
+    max-width: 950px;
+  }
+  
+  .textContainer {
+    position: relative;
+    @include font($burnerbold, $xxl, $triml);
+
+    font-size: 8rem;
+    font-weight: 600;
+    text-align: center;
+    display: inline-flex;
+    line-height: 140%;
+  }
+  
+  .text {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    @include font($burnerbold, $xxl, $triml);
+
+    color: #000;
+    text-transform: lowercase;
+    font-size: 8rem;
+
+    line-height: 140%;
+    margin: 0rem 0.3rem;
+
+  }
+  
+  .wrapContainer span,
+  .changeopacity span {
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.2;
+    position: relative;
+  }
+  

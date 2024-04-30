@@ -1,0 +1,82 @@
+@use './essentials';
+@use './typography';
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;400;500;600;700;800&family=Urbanist:wght@200;300;400;500;600;700;800;900&display=swap");
+@import './essentials';
+@import './typography';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+::selection {
+    background-color: #0059ff;
+    color: #fff;
+}
+
+body{
+    background-color: #ebebeb;
+    color: #fafafa;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+// Edu Burner Modern Font Starts
+
+@font-face {
+    font-family: HK Grotesk Regular;
+    src: url(/UIEssentials/fonts/HKGrotesk-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: HK Grotesk Medium;
+    src: url(/UIEssentials/fonts/HKGrotesk-Medium.woff) format("woff");
+}
+
+@font-face {
+    font-family: HK Grotesk SemiBold;
+    src: url(/UIEssentials/fonts/HKGrotesk-SemiBold.woff) format("woff");
+}
+
+@font-face {
+    font-family: HK Grotesk Bold;
+    src: url(/UIEssentials/fonts/HKGrotesk-Bold.woff) format("woff");
+}
+
+// Edu Burner Modern Font Ends
+
+
+
+// Yukita Sans Starts Here
+
+
+@font-face {
+    font-family: Yukita Regular;
+    src: url(/UIEssentials/fonts/YukitaSans-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: Yukita Medium;
+    src: url(/UIEssentials/fonts/YukitaSans-Medium.woff) format("woff");
+}
+
+@font-face {
+    font-family: Yukita SemiBold;
+    src: url(/UIEssentials/fonts/YukitaSans-SemiBold.woff) format("woff");
+}
+
+@font-face {
+    font-family: Yukita Bold;
+    src: url(/UIEssentials/fonts/YukitaSans-Bold.woff) format("woff");
+}
+
+// Yukita Sans Ends Here

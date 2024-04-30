@@ -1,0 +1,124 @@
+@use "./typography";
+@import "./typography";
+
+.Wraper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .Container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@mixin smooth {
+    transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@mixin mobileview {
+    @media only screen and (max-width: 60rem) {
+        margin-left: 0rem;
+    }
+}
+
+@mixin burnermedia {
+    user-select: none;
+    pointer-events: none;
+}
+
+.Btn {
+    @include font($burnersemibold, $s, $trims);
+    display: inline-flex;
+    height: 6.2rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: #7e7e7e;
+    background-color: #498DDD;
+    color: #212121;
+    color: #fafafa;
+    border-radius: 0.6rem;
+    border: transparent;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    border: 0.2rem solid #498DDD;
+    width: 100%;
+    @include smooth();
+
+    &:hover {
+        border: 0.2rem solid #498DDD;
+    }
+}
+
+.Loading {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    z-index: 1000;
+}
+
+.LoaderContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.OAuthButton {
+    @include font($burnersemibold, $s, $trims);
+    display: inline-flex;
+    height: 6.2rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: #212121;
+    color: #fafafa;
+    border-radius: 6rem;
+    border: transparent;
+    padding: 1.8rem 2rem;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    border: 0.2rem solid #7e7e7e;
+    width: 100%;
+    @include smooth();
+
+    &:hover {
+        background-color: #fafafa;
+        color: #121212;
+    }
+}
+
+@mixin tooltip{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+    &:hover .tooltip {
+        opacity: 1;
+        transform: translate(0%, 100%);
+    }
+    
+    .tooltip {
+        position: absolute;
+        bottom: 0;
+        padding-top: 0.4rem;
+        opacity: 0;
+        user-select: none;
+        pointer-events: none;
+        @include smooth();
+        transform: translate(0%, 95%);
+    }
+}

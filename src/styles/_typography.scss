@@ -1,0 +1,37 @@
+$xxs: 1.3rem;
+$xs: 1.4rem;
+$s: 1.6rem;
+$r: 1.7rem;
+$l: 2rem;
+$xl: 2.4rem;
+$xxl: 3rem;
+$display: 7rem;
+
+
+$triml: -0.1rem;
+$trimr: -0.02rem;
+$none: 0rem;
+$trims: -0.01rem;
+
+$inter: 'Inter';
+
+$burnerregular: 'Yukita Regular';
+$burnermedium: 'Yukita Medium';
+$burnersemibold: 'Yukita SemiBold';
+$burnerbold: 'Yukita Bold';
+
+@mixin font($font-family, $font-size, $trim) {
+  font-family: $font-family;
+  font-size: $font-size;
+  letter-spacing: $trim;
+}
+
+.regular{
+  color: hsl(0, 0%, 0%);
+  @include font($burnersemibold, $l, $triml);
+}
+
+.subheading{
+  color: hsl(0, 0%, 0%);
+  @include font($burnersemibold, $l, $triml);
+}
