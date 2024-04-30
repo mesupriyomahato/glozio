@@ -47,7 +47,7 @@ export default function Home() {
       <Gloziotag />
       <div style={{ minHeight: '100vh', display: "flex", justifyContent: "center", alignItems: "center" }}>
         <div ref={slider}>
-          <img ref={triggerElement} src="https://i.scdn.co/image/ab6761610000e5ebe1e00861cdb6bf56b14a1118" />
+          <img style={{height: '40rem'}} ref={triggerElement} src="https://i.scdn.co/image/ab6761610000e5ebe1e00861cdb6bf56b14a1118" />
         </div>
       </div>
       <div style={{ minHeight: '100vh' }}>

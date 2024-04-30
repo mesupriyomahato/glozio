@@ -16,8 +16,8 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
       scrollTrigger: {
         trigger: `.${styles.wrapContainer}`,
         scrub: true,
-        start: 'top 70%',
-        end: 'top 40%',
+        start: 'top center',
+        end: 'top 35%',
       },
     });
 
