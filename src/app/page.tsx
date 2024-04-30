@@ -46,11 +46,13 @@ export default function Home() {
     <>
       <Gloziotag />
       <div style={{ minHeight: '100vh', display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <div ref={slider}>
+        <div
+          ref={slider}
+        >
           <img style={{ height: '40rem' }} ref={triggerElement} src="https://i.scdn.co/image/ab6761610000e5ebe1e00861cdb6bf56b14a1118" />
         </div>
       </div>
-      <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
         <div style={{ minHeight: '100vh', maxWidth: '40rem' }}>
           <AnimatedText text={textArray} />
         </div>
